@@ -1,0 +1,61 @@
+&CONTROL
+   calculation      = 'md'
+   nstep            = 50
+   tstress          = .true.
+   tprnfor          = .true.
+   dt               = 20.0
+   outdir           = './tmp/Li2O_mp-1960_md_perturb_004'
+   prefix           = 'Li2O_mp-1960_md_perturb_004'
+   pseudo_dir       = './pseudo'
+/
+&SYSTEM
+   ecutwfc          = 50
+   ecutrho          = 400
+   nosym            = .true.
+   noinv            = .true.
+   occupations      = 'fixed'
+   ntyp             = 2
+   nat              = 12
+   ibrav            = 0
+/
+&ELECTRONS
+   conv_thr         = 1e-06
+/
+&IONS
+   ion_dynamics     = 'verlet'
+   pot_extrapolation = 'second_order'
+   wfc_extrapolation = 'second_order'
+   ion_temperature  = 'rescaling'
+   tempw            = 300
+/
+&CELL
+/
+&FCP
+/
+&RISM
+/
+ATOMIC_SPECIES
+Li 6.94 li_pbe_v1.4.uspp.F.UPF
+O 15.999 O.pbe-n-kjpaw_psl.0.1.UPF
+
+K_POINTS gamma
+
+CELL_PARAMETERS angstrom
+4.65370876383607 0.00000000000000 0.00000000000000
+-0.00000000000000 4.65370876383607 0.00000000000000
+0.00000000000000 0.00000000000000 4.65370876383607
+
+ATOMIC_POSITIONS angstrom
+Li 1.1424160091 3.5046489889 1.1454774021  
+Li 3.5098225007 1.1719356608 3.4924537708  
+Li 1.1483104832 1.1815234036 3.5003526834  
+Li 3.4830335877 3.5018943189 1.1429155484  
+Li 3.4646862558 3.4883702436 3.4917039084  
+Li 1.1719853228 1.1647281274 1.1882414603  
+Li 3.4644714999 1.1747937162 1.1679400517  
+Li 1.1905514102 3.4927798915 3.4966076484  
+O 0.0352256790 0.0159258191 0.0121711146  
+O -0.0078026621 2.3296333820 2.2938061260  
+O 2.3099798740 0.0129398669 2.2912710101  
+O 2.3287122214 2.3272110676 0.0077819757  
+

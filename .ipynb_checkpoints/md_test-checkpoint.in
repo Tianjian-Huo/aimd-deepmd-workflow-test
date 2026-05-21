@@ -1,0 +1,32 @@
+plugin load /apps/conda/lib/libdeepmd_lmp.so
+
+units           metal
+atom_style      atomic
+boundary        p p p
+
+read_data       Li2O_mp-1960.data
+
+mass 1 6.94
+mass 2 15.999
+
+pair_style      deepmd frozen_model.pb
+pair_coeff      * *
+
+neighbor        2.0 bin
+neigh_modify    every 1 delay 0 check yes
+
+timestep        0.00025
+
+velocity        all create 300 12345 mom yes rot yes dist gaussian
+
+fix             1 all nvt temp 300 300 0.05
+
+thermo          50
+thermo_style    custom step temp pe ke etotal
+
+dump            1 all atom 50 traj_li2o_300K.lammpstrj
+
+run             8000
+
+unfix           1
+undump          1

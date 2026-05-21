@@ -1,0 +1,13 @@
+checkpoint/
+tmp/
+*.save/
+*.wfc*
+*.mix*
+*.xml
+
+*.out
+*.err
+
+*.lammpstrj
+
+model.ckpt*

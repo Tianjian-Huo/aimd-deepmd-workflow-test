@@ -1,0 +1,17 @@
+qe_inputs_by_structure/Li2O_mp-13725/Li2O_mp-13725_md_perturb_001.out | frames_read=50 | valid_frames=50
+qe_inputs_by_structure/Li2O_mp-13725/Li2O_mp-13725_md_perturb_002.out | frames_read=50 | valid_frames=50
+qe_inputs_by_structure/Li2O_mp-13725/Li2O_mp-13725_md_perturb_003.out | frames_read=50 | valid_frames=50
+qe_inputs_by_structure/Li2O_mp-13725/Li2O_mp-13725_md_perturb_004.out | frames_read=50 | valid_frames=50
+qe_inputs_by_structure/Li2O_mp-13725/Li2O_mp-13725_md_perturb_005.out | frames_read=50 | valid_frames=50
+qe_inputs_by_structure/Li2O_mp-1960/Li2O_mp-1960_md_original.out | frames_read=50 | valid_frames=50
+qe_inputs_by_structure/Li2O_mp-1960/Li2O_mp-1960_md_perturb_001.out | frames_read=50 | valid_frames=50
+qe_inputs_by_structure/Li2O_mp-1960/Li2O_mp-1960_md_perturb_002.out | frames_read=50 | valid_frames=50
+qe_inputs_by_structure/Li2O_mp-1960/Li2O_mp-1960_md_perturb_003.out | frames_read=50 | valid_frames=50
+qe_inputs_by_structure/Li2O_mp-1960/Li2O_mp-1960_md_perturb_004.out | frames_read=50 | valid_frames=50
+qe_inputs_by_structure/Li2O_mp-1960/Li2O_mp-1960_md_perturb_005.out | frames_read=50 | valid_frames=50
+qe_inputs_by_structure/Li3PO4/Li3PO4_md_original.out | frames_read=50 | valid_frames=50
+qe_inputs_by_structure/Li3PO4/Li3PO4_md_perturb_001.out | frames_read=50 | valid_frames=50
+qe_inputs_by_structure/Li3PO4/Li3PO4_md_perturb_002.out | frames_read=50 | valid_frames=50
+qe_inputs_by_structure/Li3PO4/Li3PO4_md_perturb_003.out | frames_read=50 | valid_frames=50
+qe_inputs_by_structure/Li3PO4/Li3PO4_md_perturb_004.out | frames_read=50 | valid_frames=50
+qe_inputs_by_structure/Li3PO4/Li3PO4_md_perturb_005.out | frames_read=50 | valid_frames=50

@@ -1,0 +1,66 @@
+&CONTROL
+   calculation      = 'md'
+   nstep            = 50
+   tstress          = .true.
+   tprnfor          = .true.
+   dt               = 20.0
+   outdir           = './tmp/Li3PO4_md_perturb_004'
+   prefix           = 'Li3PO4_md_perturb_004'
+   pseudo_dir       = './pseudo'
+/
+&SYSTEM
+   ecutwfc          = 50
+   ecutrho          = 400
+   nosym            = .true.
+   noinv            = .true.
+   occupations      = 'fixed'
+   ntyp             = 3
+   nat              = 16
+   ibrav            = 0
+/
+&ELECTRONS
+   conv_thr         = 1e-06
+/
+&IONS
+   ion_dynamics     = 'verlet'
+   pot_extrapolation = 'second_order'
+   wfc_extrapolation = 'second_order'
+   ion_temperature  = 'rescaling'
+   tempw            = 300
+/
+&CELL
+/
+&FCP
+/
+&RISM
+/
+ATOMIC_SPECIES
+Li 6.94 li_pbe_v1.4.uspp.F.UPF
+P 30.973761998 P.pbe-n-rrkjus_psl.1.0.0.UPF
+O 15.999 O.pbe-n-kjpaw_psl.0.1.UPF
+
+K_POINTS gamma
+
+CELL_PARAMETERS angstrom
+4.81341133000000 0.00000000000000 0.00000000000000
+-0.00000000000000 5.20197613000000 0.00000000000000
+0.00000000000000 0.00000000000000 6.05746678000000
+
+ATOMIC_POSITIONS angstrom
+Li 2.4846542907 4.3997610779 -0.0014451705  
+Li 0.0576268666 0.8105872136 3.0445865516  
+Li 2.4445606613 1.6582662561 1.5229773641  
+Li 0.0448252191 3.4737065874 1.5146084991  
+Li 0.0673408987 3.4740865943 4.5674609200  
+Li 2.4676543960 1.6857598410 4.5249965767  
+P 2.3895756987 4.2823312458 3.0277332868  
+P 0.0280584084 0.8952922472 -0.0310934592  
+O 0.4566811861 1.6158592978 4.7669897194  
+O 2.9064903586 0.5584466328 2.9969945141  
+O 0.8791562673 4.2604557535 3.0236695996  
+O 3.2682045199 0.9564967339 0.0118914958  
+O 2.9300202376 3.5957462288 1.7652199066  
+O 0.5223439412 1.6399544802 1.2587998637  
+O 0.4720328856 4.6833665155 0.0188603241  
+O 2.9002870190 3.5530635031 4.2716284694  
+

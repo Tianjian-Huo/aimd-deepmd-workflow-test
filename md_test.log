@@ -1,0 +1,11 @@
+nohup: ignoring input
+LAMMPS (29 Aug 2024)
+2026-05-21 17:54:54.785853: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+  using 1 OpenMP thread(s) per MPI task
+Loading plugin: deepmd pair style  by Han Wang
+Loading plugin: deepspin pair style  by Duo Zhang
+Loading plugin: compute deeptensor/atom  by Han Wang
+Loading plugin: fix dplr  by Han Wang
+Loading plugin: kspace pppm/dplr  by Han Wang
+ERROR: Cannot open file Li2O_mp-1960.data: No such file or directory (src/read_data.cpp:367)
+Last command: read_data       Li2O_mp-1960.data
